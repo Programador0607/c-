@@ -1,1 +1,25 @@
-ouiçwadhfvhiçwdui
+ enum opçoes {Lado_a,Lado_b}
+  
+  
+  static void Main(string[] args)
+  {
+      Console.WriteLine("escolha umas das poçoes abaixas");
+
+      Console.WriteLine("1 Lado a\n2 Lado b");
+          int index = int.Parse(Console.ReadLine());
+      opçoes opçaoselecionada = (opçoes)index;
+      
+      
+      
+      switch (opçaoselecionada)
+      {
+          case opçoes.Lado_a:
+              Console.WriteLine("Voce escolheu o lado a");
+              break;
+
+          case opçoes.Lado_b:
+              Console.WriteLine("Voce escolheu lado b");
+              break;
+
+
+      }
